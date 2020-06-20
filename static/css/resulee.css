@@ -1,0 +1,38 @@
+body{
+	text-align: center;
+	font-family: 'Roboto, sans-serif;                 
+	font-size: 100%;
+	background: url("images/1.jpg")no-repeat center top;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-attachment: fixed;
+	padding: 0 0 2em;
+
+}
+#some{
+	font-size: 200%
+	color:white;
+	font-family: 'Titillium Web', sans-serif;
+}
+h2 {
+	margin: 1em 0 0.5em 0;
+	color: #343434;
+	font-weight: normal;
+	font-family: 'Ultra', sans-serif;   
+	font-size: 36px;
+	line-height: 42px;
+	text-transform: uppercase;
+	text-shadow: 0 2px white, 0 3px #777;
+}
+
+}
+h3{
+	margin: 1em 0 0.5em 0;
+	color: #343434;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 40px;
+	font-family: 'Orienta', sans-serif;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="{{url_for('static', filename='css/semi.css')}}">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet"  href="{{ url_for('static', filename='css/main.css') }}">
+	<title>Predict Diabetes</title>
+</head>
+<div>
+<body>
+	<main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8">
+          {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+              {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                  {{ message }}
+                </div>
+              {% endfor %}
+            {% endif %}
+          {% endwith %}
+          {% block content %}{% endblock %}
+        </div>
+        
+      </div>
+    </main>
+
+<h1 id="mas">Please enter  the  following fields required for prediction:</h1>
+	
+	<form method= "POST" action="{{url_for('predict')}}">
+
+
+			<ul >
+
+					<li id="li_1" >
+		<label class="description" for="element_1">Pregnancies </label>
+		<div>
+			<input id="element_1" name="Pregnancies" class="element text small" type="text" maxlength="255" value=""/>
+		</div>
+		</li>		<li id="li_2" >
+		<label class="description" for="element_2">Glucose </label>
+		<div>
+			<input id="element_2" name="Glucose Level" class="element text small" type="text" maxlength="255" value=""/>
+		</div>
+		</li>		<li id="li_3" >
+		<label class="description" for="element_3">Blood Pressure </label>
+		<div>
+			<input id="element_3" name="Blood Pressure" class="element text small" type="text" maxlength="255" value=""/>
+		</div>
+		</li>		<li id="li_4" >
+		<label class="description" for="element_4">Skin Thickness </label>
+		<div>
+			<input id="element_4" name="Skin Thickness" class="element text small" type="text" maxlength="255" value=""/>
+		</div>
+		</li>		<li id="li_5" >
+		<label class="description" for="element_5">Insulin </label>
+		<div>
+			<input id="element_5" name="Insulin" class="element text small" type="text" maxlength="255" value=""/>
+		</div>
+				</li>		<li id="li_6" >
+		<label class="description" for="element_6">BMI </label>
+		<div>
+			<input id="element_6" name="BMI" class="element text small" type="text" maxlength="255" value=""/>
+		
+		</li>		<li id="li_8" >
+		<label class="description" for="element_8">Age </label>
+		<div>
+			<input id="element_8" name="Age" class="element text small" type="text" maxlength="255" value=""/>
+		</div>
+		</li>		
+
+
+			</ul>
+
+		
+		<div id="hj">
+			<input type=submit value='Submit' name='submit_btn'>
+		</div>
+		<div class="border-top pt-3">
+        <small class="text-muted">
+            Want to logout? <a class="ml-2" href="{{url_for('logout')}}">Logout</a>
+        </small>
+    </div>
+	</form>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+
+</body>
+</div>
+</html>

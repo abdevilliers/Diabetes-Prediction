@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="{{url_for('static', filename='css/resulee.css')}}">
+	<title>Results</title>
+</head>
+<body>
+
+	<h2>{{ str }}</h2>
+	<h3>The accuracy of this prediction is <p id="some">{{ percent }}%</p></h3>
+	<div class="border-top pt-3">
+        <small class="text-muted">
+            Want to logout? <a class="ml-2" href="{{url_for('logout')}}">Logout</a>
+        </small>
+    </div>
+	
+	
+	
+</body>
+</html>

@@ -1,0 +1,57 @@
+body{
+	text-align: center;
+	background: url("images/1.jpg")no-repeat center top;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-attachment: fixed;
+	padding: 0 0 2em;
+
+}
+
+#mas {
+	margin: 1em 0 0.5em 0;
+	color: #343434;
+	font-weight: normal;
+	font-family: 'Ultra', sans-serif;   
+	font-size: 36px;
+	line-height: 42px;
+	text-transform: uppercase;
+	text-shadow: 0 2px white, 0 3px #777;
+}
+
+input[type=submit]:hover {
+    background: #023e99;
+    border-color: #023e99;
+    color: #fefefe;
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+}
+body{
+	text-align: center;
+	font-family: 'Roboto, sans-serif;
+	font-size: 100%;
+	background: url("images/savedoc.jpg")no-repeat center top;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-attachment: fixed;
+	padding: 0 0 2em;
+
+}
+form {
+	font-size: 20px;
+	font-family: "Times New Roman"
+	display: inline-block;
+}
+ul {
+	list-style-type: none;
+}
+ 
+
+
